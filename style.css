@@ -268,7 +268,7 @@ article
 	border-radius: 15px 15px 0 0;
 }
 
-h4
+.nom-resto
 {
 	margin-left: 10px;
 	margin-top: 0px;
@@ -302,7 +302,7 @@ footer
 
 }
 
-h5
+.omf-footer
 {
 	margin-bottom: 10px;
 	font-size: 1.2em;
