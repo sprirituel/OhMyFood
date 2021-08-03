@@ -124,7 +124,7 @@ h2
 {
 	color: grey;
 }
-
+/*Bouton explorer nos restaurant*/
 button
 {
 	color: white;
@@ -373,7 +373,7 @@ li .fas
 }
 
 
-
+/*Animation menu au chargement de la page en fondu*/
 .liste-menu
 {
 	box-shadow: 1px -3px 2px rgb(0 0 0 / 10%);
@@ -501,7 +501,7 @@ li .fas
 	position: relative;
 	text-align: right;
 }
-
+/*Bouton nouveau qui clignote*/
  .clignote
  {
  	position: absolute;
@@ -525,7 +525,7 @@ li .fas
   100% { opacity:1; }
 }
 
-
+/*Validation qui apparait sur les differents menus*/
 .menu-confirmation
 {
 	background-color: #99e2d0;
@@ -583,7 +583,7 @@ li .fas
 	display: flex;
 }
 
-
+/*Sert a cacher les bouton de validation avant apparition*/
 .cacher
 {
 	width: 90%;
@@ -591,6 +591,7 @@ li .fas
 	position: relative;
 }
 
+/*Bouton commander en fin de page*/
 .btn-commander
 {
 	text-align: center;
@@ -598,6 +599,7 @@ li .fas
 	padding-bottom: 50px;
 }
 
+/*Chargement de la page d'accueil*/
 .chargement
 {
 	width: 150px;
@@ -694,6 +696,7 @@ li .fas
 	font-size: 1.1em;
 }
 
+/*Animation coeur qui se remplit*/
 .like .fas
 {
 	position: absolute;
@@ -732,7 +735,7 @@ li .fas
 		transform: scale(1,1);
 	}
 }
-
+/*responsive desktop*/
 @media (max-width: 2500px) and (min-width: 1100px)
 {
 
@@ -783,6 +786,7 @@ li .fas
 
 }
 
+/*Responsive tablette*/
 @media (max-width: 1100px) and (min-width: 700px)
 {
 	.menu-et-validation:hover .indication-plat
