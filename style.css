@@ -225,7 +225,7 @@ h2
 
 h3
 {
-	font-weight: 50;
+	font-weight: normal;
 	margin-right: 20px;
 }
 
@@ -699,7 +699,7 @@ li .fas
 	position: absolute;
 	font-size: 0.80em;
 	background:-webkit-linear-gradient(bottom, #9356DC, #FF79DA);
-    background-clip:text;
+    background-clip:content-box;
     -webkit-background-clip:text;
     color: transparent;
 	top: 17.5%; left: 9%; right: 0; bottom: 0;
