@@ -90,6 +90,11 @@ a:hover
 
 }
 
+#titre-barre-recherche
+{
+	margin-left: 0px;
+}
+
 .placeholder
 {
 	border: none;
@@ -134,12 +139,13 @@ button
 	height: 60px;
 	width: 300px;
 	border: none;
+	box-shadow: 1px 5px 5px grey;
 }
 
 button:hover
 {
 	filter: brightness(120%);
-	box-shadow: 1px -1px 6px grey;
+	box-shadow: 1px 7px 2px grey;
 }
 h2
 {
@@ -205,12 +211,17 @@ h2
 
 .choix:hover
 {
-	background-color: #CAA4D3;
+	background-color: #EEDEF1;
+}
+
+.choix:hover .fas
+{
+	color: #9356DC;
 }
 
 .number
 {
-	color: black;
+	color: white;
 	background-color: #9356DC;
 	width: 25px;
 	height: 25px;
@@ -251,6 +262,7 @@ article
 	width: 90%;
 	box-shadow: 1px 1px 6px black;
 	border-radius: 15px;
+	padding-bottom: 10px;
 }
 
 .image-restaurant
@@ -426,6 +438,7 @@ li .fas
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	width: 28%;
 }
 
 .menu-souligné
@@ -462,8 +475,8 @@ li .fas
 	text-overflow: ellipsis;
 	width: 75%;
 	transform-origin: left;
-	transition: transform 450ms ease-in-out;
-
+	transition: width 450ms ease-in-out;
+	
 }
 
 .indication-prix
@@ -479,7 +492,11 @@ li .fas
 	margin-right: 15px;
 	font-weight: bold;
 	transition: transform 450ms ease-in-out;
+	display: block;
+	width: 10%;
+	display: block;
 }
+
 
 li .fas
 {
@@ -508,9 +525,9 @@ li .fas
  	top: 7%;
  	right: 5%;
  	font-size: 1.1em;
- 	animation-duration: 1.3s;
+ 	/*animation-duration: 1.3s;
 	animation-name: clignote;
-	animation-iteration-count: infinite;
+	animation-iteration-count: infinite;*/
 	color: #1b6150;
 	background-color: #99e2d0;
 	height: 27px;
@@ -519,11 +536,11 @@ li .fas
 	align-items: center;
  }
 
-@keyframes clignote {
+/*@keyframes clignote {
   0%   { opacity:1; }
   40%   {opacity:0; }
   100% { opacity:1; }
-}
+}*/
 
 /*Validation qui apparait sur les differents menus*/
 .menu-confirmation
@@ -569,7 +586,7 @@ li .fas
 
 .menu-et-validation:hover .indication-plat
 {
-	transform: scale(0.8, 1.2);
+	width: 63%;
 }
 
 .menu-et-validation:hover .fas
@@ -761,6 +778,7 @@ li .fas
 	.restaurant
 	{
 		width: 40%;
+		background-color: white;
 	}
 
 
