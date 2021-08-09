@@ -462,6 +462,12 @@ li .fas
 	margin-top: 10px;
 	margin-bottom: 0px;
 	padding-top: 0px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	transform-origin: left;
+	transition: width 450ms ease-in-out;
+	width: 100%;
 
 }
 
@@ -585,8 +591,14 @@ li .fas
 
 .menu-et-validation:hover .indication-plat
 {
-	width: 63%;
+	width: 55%;
 }
+
+.menu-et-validation:hover .nom-plat
+{
+	width: 55%;
+}
+
 
 .menu-et-validation:hover .fas
 {
@@ -713,44 +725,21 @@ li .fas
 }
 
 /*Animation coeur qui se remplit*/
-.like .fas
+.fa-heart 
 {
-	position: absolute;
-	font-size: 0.80em;
-	background:-webkit-linear-gradient(bottom, #9356DC, #FF79DA);
-    background-clip:content-box;
-    -webkit-background-clip:text;
-    color: transparent;
-	top: 17.5%; left: 9%; right: 0; bottom: 0;
-	transform: scale(0,0);	
+    background-size: 100% 200%; /* largeure / hauteur */
+    background-image: linear-gradient(to top, #FF79DA 50%, transparent 50%); /*  */
+    transition: all 800ms; /* 1: propriété 2: début de l'animation */
+    -webkit-text-stroke: 3px black; /* bordure noire */
+    -webkit-background-clip: text; /* pour ne remplir que l'intérieur du coeur */
+    -webkit-text-fill-color: transparent; /* intérieur vide au début */
+    font-size: 1em;
+ }
 
-}
-
-.far:hover .fas
-{
-	animation: remplissage-hauteur 0.8s linear forwards;
-	transform-origin: bottom;
-}
-
-
-
-@keyframes remplissage-hauteur
-{
-	0%	
-	{
-		transform: scale(0,0);
-	}
-
-	40%
-	{
-		transform: scale(0.1,0.4);
-	}
-
-	100%
-	{
-		transform: scale(1,1);
-	}
-}
+  .fa-heart:hover {
+    background-position: 0 100%;
+    -webkit-text-stroke: #ffb3ff;
+ }
 /*responsive desktop*/
 @media (max-width: 4000px) and (min-width: 1100px)
 {
@@ -805,7 +794,6 @@ li .fas
 	{
 		width: 28%;
 	}
-
 }
 
 /*Responsive tablette*/
