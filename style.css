@@ -728,8 +728,8 @@ li .fas
 .fa-heart 
 {
     background-size: 100% 200%; /* largeure / hauteur */
-    background-image: linear-gradient(to top, #FF79DA 50%, transparent 50%); /*  */
-    transition: all 800ms; /* 1: propriété 2: début de l'animation */
+    background-image: linear-gradient(to top, purple 20%, white 60%); /*  */
+    transition: all 800ms; /* 1: propriété 2: durée de l'animation */
     -webkit-text-stroke: 3px black; /* bordure noire */
     -webkit-background-clip: text; /* pour ne remplir que l'intérieur du coeur */
     -webkit-text-fill-color: transparent; /* intérieur vide au début */
